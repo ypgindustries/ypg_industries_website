@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YPG Industries | Premium Industrial Machinery & Moulding</title>
+    <!-- Website Favicon -->
+    <link rel="icon" type="image/png" href="image_be92e1.png">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .industrial-font { font-family: 'Orbitron', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 overflow-x-hidden selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Premium Navigation Bar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="h-10 w-10 bg-gradient-to-tr from-amber-500 to-orange-600 rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/20">
+                        <i class="fa-solid fa-gears text-slate-950 text-xl animate-spin-slow"></i>
+                    </div>
+                    <div>
+                        <span class="industrial-font text-2xl font-bold tracking-wider bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">YPG</span>
+                        <span class="text-xs block text-slate-400 tracking-widest -mt-1 uppercase">Industries</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+                    <a href="#home" class="hover:text-amber-400 transition-colors">Home</a>
+                    <a href="#machinery" class="hover:text-amber-400 transition-colors">Machinery</a>
+                    <a href="#works" class="hover:text-amber-400 transition-colors">Our Works</a>
+                    <a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button onclick="openAdminConsole()" class="bg-slate-900 border border-amber-500/30 hover:border-amber-400 text-amber-400 text-xs uppercase tracking-widest font-bold py-2 px-4 rounded-md transition-all flex items-center gap-2 cursor-pointer shadow-md shadow-amber-500/5">
+                        <i class="fa-solid fa-user-gear"></i> Admin Console
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Core Hero Presentation Layer -->
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-20 px-4">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(245,158,11,0.08),transparent_45%)]"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-800 rounded-full px-4 py-1.5 mb-6 text-xs font-medium tracking-wide text-amber-400">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                </span>
+                Precision Engineering Ecosystem | Narhe, Pune
+            </div>
+            <h1 class="industrial-font text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight uppercase leading-none mb-6">
+                Next-Gen <br class="hidden sm:block">
+                <span class="bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-400 bg-clip-text text-transparent">Moulding Solutions</span>
+            </h1>
+            <p class="text-slate-400 max-w-2xl mx-auto text-base sm:text-lg mb-10 leading-relaxed">
+                Empowering tier-1 manufacturers with high-performance horizontal & vertical injection moulding machinery, custom plastic injection moulds, and rugged production dies.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <a href="#machinery" class="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-slate-950 font-bold px-8 py-4 rounded-lg transition-all shadow-lg shadow-amber-600/20 text-center">
+                    Explore Inventory
+                </a>
+                <a href="#contact" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-300 font-bold px-8 py-4 rounded-lg transition-all text-center">
+                    Request Custom Quote
+                </a>
+            </div>
+
+            <!-- Plant Exterior Showcase -->
+            <div class="max-w-4xl mx-auto rounded-xl overflow-hidden border border-slate-800 shadow-2xl relative group">
+                <img src="WhatsApp Image 2026-06-24 at 1.10.56 PM.jpeg" alt="YPG Industries Plant" class="w-full h-auto max-h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                <p class="absolute bottom-4 left-6 text-sm text-amber-400 font-mono tracking-wider"><i class="fa-solid fa-industry mr-2"></i>Main Production Plant Exterior Layout</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Machinery Vault Grid -->
+    <section id="machinery" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-slate-900">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+                <h2 class="industrial-font text-xs tracking-widest font-bold text-amber-500 uppercase mb-2">// Product Catalog</h2>
+                <p class="text-3xl font-bold tracking-tight text-white">Advanced Injection Systems</p>
+            </div>
+            <div class="text-sm text-slate-400 max-w-md">
+                Engineered for continuous industrial duty, precision cycle controls, and energy efficiency optimization.
+            </div>
+        </div>
+
+        <div id="machineryGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Dynamic Injection Item 1 -->
+            <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden hover:border-slate-700/80 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="h-64 bg-slate-950 relative overflow-hidden flex items-center justify-center">
+                        <img src="WhatsApp Image 2026-06-24 at 12.39.53 PM (1).jpeg" alt="Horizontal Machinery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 z-10"></div>
+                        <span class="absolute top-4 left-4 bg-amber-500/10 border border-amber-500/20 text-amber-400 text-[10px] uppercase font-bold tracking-widest px-2 py-1 rounded backdrop-blur-sm">Heavy Duty</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">SHINI 570 Horizontal Injection System</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">High clamping force system architecture designed explicitly for precise component forming and minimal cycle loss.</p>
+                        <div class="space-y-2 border-t border-slate-800/60 pt-4">
+                            <div class="flex justify-between text-xs"><span class="text-slate-500">Model Configuration:</span><span class="text-slate-300 font-mono font-semibold">SHINI-570 / Classic</span></div>
+                            <div class="flex justify-between text-xs"><span class="text-slate-500">Control System:</span><span class="text-slate-300 font-mono font-semibold">Microprocessor Driven</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button class="w-full bg-slate-800/80 hover:bg-amber-500 group-hover:text-slate-950 text-slate-300 font-semibold text-xs py-3 rounded-lg transition-all uppercase tracking-wider cursor-pointer">Specs Sheet</button>
+                </div>
+            </div>
+
+            <!-- Dynamic Injection Item 2 -->
+            <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden hover:border-slate-700/80 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="h-64 bg-slate-950 relative overflow-hidden flex items-center justify-center">
+                        <img src="WhatsApp Image 2026-06-24 at 12.39.54 PM.jpeg" alt="Vertical Injection Setup" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 z-10"></div>
+                        <span class="absolute top-4 left-4 bg-amber-500/10 border border-amber-500/20 text-amber-400 text-[10px] uppercase font-bold tracking-widest px-2 py-1 rounded backdrop-blur-sm">High Precision</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">RKV-50 Vertical Injection Machine</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">Optimized floor-space layout architecture engineered for insert-moulding applications and specialized assembly integration.</p>
+                        <div class="space-y-2 border-t border-slate-800/60 pt-4">
+                            <div class="flex justify-between text-xs"><span class="text-slate-500">Orientation:</span><span class="text-slate-300 font-mono font-semibold">Vertical Alignment</span></div>
+                            <div class="flex justify-between text-xs"><span class="text-slate-500">Application:</span><span class="text-slate-300 font-mono font-semibold">Insert Moulding Works</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button class="w-full bg-slate-800/80 hover:bg-amber-500 group-hover:text-slate-950 text-slate-300 font-semibold text-xs py-3 rounded-lg transition-all uppercase tracking-wider cursor-pointer">Specs Sheet</button>
+                </div>
+            </div>
+
+            <!-- Dynamic Injection Item 3 -->
+            <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden hover:border-slate-700/80 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="h-64 bg-slate-950 relative overflow-hidden flex items-center justify-center">
+                        <img src="WhatsApp Image 2026-06-24 at 12.39.54 PM (1).jpeg" alt="Vertical Clamping Machinery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 z-10"></div>
+                        <span class="absolute top-4 left-4 bg-amber-500/10 border border-amber-500/20 text-amber-400 text-[10px] uppercase font-bold tracking-widest px-2 py-1 rounded backdrop-blur-sm">Continuous Duty</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">Automated Vertical Clamping Cell</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">Equipped with automated top hopper feeding systems for rapid custom plastic components processing.</p>
+                        <div class="space-y-2 border-t border-slate-800/60 pt-4">
+                            <div class="flex justify-between text-xs"><span class="text-slate-500">Feeder Unit:</span><span class="text-slate-300 font-mono font-semibold">Integrated Shini Hopper</span></div>
+                            <div class="flex justify-between text-xs"><span class="text-slate-500">Production Type:</span><span class="text-slate-300 font-mono font-semibold">Continuous Run Die</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button class="w-full bg-slate-800/80 hover:bg-amber-500 group-hover:text-slate-950 text-slate-300 font-semibold text-xs py-3 rounded-lg transition-all uppercase tracking-wider cursor-pointer">Specs Sheet</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operational Works Gallery Portfolio -->
+    <section id="works" class="bg-slate-900/20 border-t border-b border-slate-900 py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <h2 class="industrial-font text-xs tracking-widest font-bold text-amber-500 uppercase">// Capabilities Portfolio</h2>
+                    </div>
+                    <p class="text-3xl font-bold tracking-tight text-white">Precision Molded Works & Molds</p>
+                </div>
+                <div class="text-sm text-slate-400 max-w-md">
+                    Proof of performance. Review the actual intricate heavy machinery molds engineered for custom manufacturing output.
+                </div>
+            </div>
+
+            <div id="worksGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Die Tooling Gallery 1 -->
+                <div class="bg-slate-900/60 border border-slate-800/50 rounded-xl overflow-hidden hover:border-amber-500/30 transition-all p-4 group">
+                    <div class="h-44 rounded-lg bg-slate-950 flex items-center justify-center mb-4 relative overflow-hidden">
+                        <img src="WhatsApp Image 2026-06-24 at 1.15.24 PM.jpeg" alt="Industrial Molds Block" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest bg-amber-500/5 border border-amber-500/10 px-2 py-0.5 rounded">Heavy Tooling</span>
+                    <h4 class="text-base font-bold text-white mt-2 mb-1">High Clamping Die Sets</h4>
+                    <p class="text-xs text-slate-400">Hardened steel multi-plate alignment dies carefully calibrated for horizontal injection plants.</p>
+                </div>
+                <!-- Die Tooling Gallery 2 -->
+                <div class="bg-slate-900/60 border border-slate-800/50 rounded-xl overflow-hidden hover:border-amber-500/30 transition-all p-4 group">
+                    <div class="h-44 rounded-lg bg-slate-950 flex items-center justify-center mb-4 relative overflow-hidden">
+                        <img src="WhatsApp Image 2026-06-24 at 1.15.25 PM (1).jpeg" alt="Industrial Molds Vault" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest bg-amber-500/5 border border-amber-500/10 px-2 py-0.5 rounded">Custom Engineering</span>
+                    <h4 class="text-base font-bold text-white mt-2 mb-1">Spring-Assisted Compression Blocks</h4>
+                    <p class="text-xs text-slate-400">Advanced mold architectures incorporating heavy springs for flawless component release matrices.</p>
+                </div>
+                <!-- Die Tooling Gallery 3 -->
+                <div class="bg-slate-900/60 border border-slate-800/50 rounded-xl overflow-hidden hover:border-amber-500/30 transition-all p-4 group">
+                    <div class="h-44 rounded-lg bg-slate-950 flex items-center justify-center mb-4 relative overflow-hidden">
+                        <img src="WhatsApp Image 2026-06-24 at 1.15.25 PM (2).jpeg" alt="Mould Blocks Stack" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest bg-amber-500/5 border border-amber-500/10 px-2 py-0.5 rounded">Mass Production</span>
+                    <h4 class="text-base font-bold text-white mt-2 mb-1">Multi-Cavity Assembly Blocks</h4>
+                    <p class="text-xs text-slate-400">High-volume standard core blocks optimized for dense plastic structural molding outputs.</p>
+                </div>
+                <!-- Plant Aerial overview -->
+                <div class="bg-slate-900/60 border border-slate-800/50 rounded-xl overflow-hidden hover:border-amber-500/30 transition-all p-4 group">
+                    <div class="h-44 rounded-lg bg-slate-950 flex items-center justify-center mb-4 relative overflow-hidden">
+                        <img src="WhatsApp Image 2026-06-24 at 12.39.56 PM.jpeg" alt="Plant Floor Layout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest bg-amber-500/5 border border-amber-500/10 px-2 py-0.5 rounded">Plant Operations</span>
+                    <h4 class="text-base font-bold text-white mt-2 mb-1">Operational Plant Floor</h4>
+                    <p class="text-xs text-slate-400">Deep layout overview of active machine bay configurations at our Pune facility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Industrial Facility Map Location Section -->
+    <section class="relative bg-slate-900/40 border-t border-slate-900 py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                
+                <!-- Left Sidebar: Location Highlight Information -->
+                <div class="space-y-6 lg:col-span-1">
+                    <div>
+                        <h2 class="industrial-font text-xs tracking-widest font-bold text-amber-500 uppercase mb-2">// Facility Footprint</h2>
+                        <p class="text-3xl font-bold tracking-tight text-white">Visit Our Plant</p>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Our centralized production node is fully geared to handle heavy-duty assemblies, custom tooling inspections, and logistics distribution. Drop by our facility to observe live machinery operations.
+                    </p>
+                    
+                    <div class="p-5 bg-slate-950 border border-slate-800 rounded-xl space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 h-6 w-6 bg-amber-500/10 rounded border border-amber-500/20 flex items-center justify-center text-amber-400 text-xs shrink-0">
+                                <i class="fa-solid fa-industry"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider">Facility Hub</h4>
+                                <p class="text-sm text-amber-400 font-semibold mt-0.5">YPG Industries, Narhe</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 border-t border-slate-900 pt-3">
+                            <div class="mt-1 h-6 w-6 bg-slate-900 rounded flex items-center justify-center text-slate-400 text-xs shrink-0">
+                                <i class="fa-solid fa-route"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Navigation Coordinates</h4>
+                                <p class="text-xs text-slate-400 mt-0.5 font-mono">18.4412118° N, 73.824666° E</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/place/YPG+INDUSTRIES+NARHE/@18.4416851,73.8230138,17z/data=!4m6!3m5!1s0x3bc29500776b0daf:0x2f3dea5dd8c7ca1!8m2!3d18.4412118!4d73.824666!16s%2Fg%2F11nq1mfzmj" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 px-5 py-3 rounded-lg transition-all w-full sm:w-auto justify-center shadow-lg shadow-amber-500/10">
+                        <i class="fa-solid fa-arrow-turn-up text-xs"></i> Open directly in Google Maps
+                    </a>
+                </div>
+
+                <!-- Right Window: Embedded High-Fidelity Google Map View -->
+                <div class="lg:col-span-2 relative">
+                    <!-- Technical Aesthetic Border Framing -->
+                    <div class="absolute -inset-2 bg-gradient-to-tr from-amber-500/10 to-transparent rounded-2xl blur-lg -z-10"></div>
+                    <div class="w-full h-[450px] rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 relative">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.607998634599!2d73.82247737604593!3d18.441216771141703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29500776b0daf%3A0x2f3dea5dd8c7ca1!2sYPG%20INDUSTRIES%20NARHE!5e0!3m2!1sen!2sin!4v1719234850000!5m2!1sen!2sin" 
+                            class="w-full h-full border-0 grayscale invert contrast-115 opacity-85 hover:grayscale-0 hover:invert-0 hover:opacity-100 transition-all duration-700"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Industrial Facility Map Location Section -->
+    <section class="relative bg-slate-900/40 border-t border-slate-900 py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                
+                <!-- Left Sidebar: Location Highlight Information -->
+                <div class="space-y-6 lg:col-span-1">
+                    <div>
+                        <h2 class="industrial-font text-xs tracking-widest font-bold text-amber-500 uppercase mb-2">// Facility Footprint</h2>
+                        <p class="text-3xl font-bold tracking-tight text-white">Visit Our Plant</p>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Our centralized production node is fully geared to handle heavy-duty assemblies, custom tooling inspections, and logistics distribution. Drop by our facility to observe live machinery operations.
+                    </p>
+                    
+                    <div class="p-5 bg-slate-950 border border-slate-800 rounded-xl space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 h-6 w-6 bg-amber-500/10 rounded border border-amber-500/20 flex items-center justify-center text-amber-400 text-xs shrink-0">
+                                <i class="fa-solid fa-industry"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider">Facility Hub</h4>
+                                <p class="text-sm text-amber-400 font-semibold mt-0.5">YPG Industries, Narhe</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 border-t border-slate-900 pt-3">
+                            <div class="mt-1 h-6 w-6 bg-slate-900 rounded flex items-center justify-center text-slate-400 text-xs shrink-0">
+                                <i class="fa-solid fa-route"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Navigation Coordinates</h4>
+                                <p class="text-xs text-slate-400 mt-0.5 font-mono">18.4412118° N, 73.824666° E</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/place/YPG+INDUSTRIES+NARHE/@18.4416851,73.8230138,17z/data=!4m6!3m5!1s0x3bc29500776b0daf:0x2f3dea5dd8c7ca1!8m2!3d18.4412118!4d73.824666!16s%2Fg%2F11nq1mfzmj" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 px-5 py-3 rounded-lg transition-all w-full sm:w-auto justify-center shadow-lg shadow-amber-500/10">
+                        <i class="fa-solid fa-arrow-turn-up text-xs"></i> Open directly in Google Maps
+                    </a>
+                </div>
+
+                <!-- Right Window: Embedded High-Fidelity Google Map View -->
+                <div class="lg:col-span-2 relative">
+                    <div class="absolute -inset-2 bg-gradient-to-tr from-amber-500/10 to-transparent rounded-2xl blur-lg -z-10"></div>
+                    <div class="w-full h-[450px] rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 relative">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.607998634599!2d73.82247737604593!3d18.441216771141703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29500776b0daf%3A0x2f3dea5dd8c7ca1!2sYPG%20INDUSTRIES%20NARHE!5e0!3m2!1sen!2sin!4v1719234850000!5m2!1sen!2sin" 
+                            class="w-full h-full border-0 grayscale invert contrast-115 opacity-85 hover:grayscale-0 hover:invert-0 hover:opacity-100 transition-all duration-700"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Persistent Floating WhatsApp Action Component Matrix -->
+    <div class="fixed bottom-6 right-6 z-50 group flex flex-col items-end gap-2">
+        <span class="bg-slate-900 border border-slate-850 text-emerald-400 text-[10px] uppercase font-bold tracking-wider px-3 py-1.5 rounded-md shadow-xl opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none hidden sm:inline-block">
+            Inquire Moulding Works
+        </span>
+        
+        <!-- Replace 910000000000 with your actual company WhatsApp number below -->
+        <a href="https://wa.me/9183810git branch -M main99808?text=Hello%20YPG%20Industries%2C%20I%20would%20like%20to%20inquire%20about%20your%20custom%20moulding%20works%20and%20industrial%20machinery." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Inquire via WhatsApp"
+           class="relative h-14 w-14 bg-emerald-500 hover:bg-emerald-400 rounded-full flex items-center justify-center text-white text-2xl shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer">
+            <span class="absolute -inset-1 rounded-full bg-emerald-500/30 animate-ping -z-10"></span>
+            <i class="fa-brands fa-whatsapp drop-shadow-md"></i>
+        </a>
+    </div>
+
+    <!-- Operational Footer Node (Initialize Plant Consultation Layout) -->
+    <footer id="contact" class="bg-slate-950 border-t border-slate-900 py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="industrial-font text-3xl font-extrabold text-white mb-4 uppercase tracking-wider">Initialize Plant Consultation</h2>
+            <p class="text-slate-400 text-sm max-w-lg mx-auto mb-10">
+                Let's optimize your manufacturing line output metrics. Connect directly with our core engineering cell at the Narhe development plant.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto text-left mb-12">
+                <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-xl flex items-start gap-4">
+                    <i class="fa-solid fa-location-dot text-amber-500 text-xl mt-1"></i>
+                    <div>
+                        <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400">Plant Address</h5>
+                        <p class="text-sm text-slate-200 mt-1 font-medium">Shop 4, Yash Samruddhi, B Wing, Narhe, Pune - 411041</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-xl flex items-start gap-4">
+                    <i class="fa-solid fa-envelope text-amber-500 text-xl mt-1"></i>
+                    <div>
+                        <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400">Procurement & Sales</h5>
+                        <p class="text-sm text-slate-200 mt-1 font-mono">+91 83810 99808</p>
+                        <p class="text-sm text-slate-200 mt-1 font-mono">ypgindustry@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright and Identity Sub-bar -->
+            <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <div class="flex items-center gap-2">
+                    <span>&copy; 2026 All Rights Reserved.</span>
+                    <span class="industrial-font text-amber-400 font-bold tracking-wider">YPG INDUSTRIES</span>
+                    <span>Created by Suyash ❤️.</span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#home" class="hover:text-slate-300">Back to Top</a>
+                    <span>&middot;</span>
+                    <span class="text-slate-600">Narhe, Pune Industrial Belt</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Authentication Modal View -->
+    <div id="authModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm p-6 rounded-xl shadow-2xl space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                <div class="flex items-center gap-2 text-amber-400 font-bold tracking-wide text-sm">
+                    <i class="fa-solid fa-lock-open"></i> Gatekeeper Verification
+                </div>
+                <button onclick="closeAuthModal()" class="text-slate-400 hover:text-white cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <form onsubmit="verifyAdminAccess(event)" class="space-y-3 text-xs">
+                <div>
+                    <label class="block text-slate-400 mb-1">Administrative Secret ID</label>
+                    <input type="text" id="authUser" required class="w-full bg-slate-950 border border-slate-800 rounded px-3 py-2 text-white focus:outline-none focus:border-amber-500 font-mono">
+                </div>
+                <div>
+                    <label class="block text-slate-400 mb-1">Security Token Key</label>
+                    <input type="password" id="authPass" required class="w-full bg-slate-950 border border-slate-800 rounded px-3 py-2 text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div id="authError" class="text-red-400 text-[11px] hidden font-semibold"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Authentication Rejected. Try again.</div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2.5 rounded uppercase tracking-wider transition-all cursor-pointer">Verify Access</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contextual Sidebar Panel: Admin Mode Console -->
+    <div id="adminPanel" class="fixed inset-y-0 right-0 w-full max-w-md bg-slate-900 border-l border-slate-800 z-50 transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col justify-between hidden">
+        <div class="p-6 overflow-y-auto flex-1">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-amber-500"></i>
+                    <h3 class="industrial-font text-sm font-bold tracking-wider uppercase text-white">Inventory Management</h3>
+                </div>
+                <button onclick="closeAdminPanel()" class="text-slate-400 hover:text-white transition-colors cursor-pointer p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Form Router Context for Machines -->
+            <div class="space-y-6">
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
+                    <h4 class="text-xs font-bold text-amber-400 uppercase tracking-widest mb-4"><i class="fa-solid fa-plus-circle mr-1"></i> Provision New Machine</h4>
+                    <form id="machineForm" onsubmit="handleMachineUpload(event)" class="space-y-3 text-xs">
+                        <div>
+                            <label class="block text-slate-400 mb-1 font-medium">Machine Model Name</label>
+                            <input type="text" id="macName" required class="w-full bg-slate-900 border border-slate-800 rounded px-3 py-2 text-white focus:outline-none focus:border-amber-500" placeholder="e.g., SMH-400 Heavy Clamping">
+                        </div>
+                        <div>
+                            <label class="block text-slate-400 mb-1 font-medium">Technical Summary</label>
+                            <textarea id="macDesc" required rows="2" class="w-full bg-slate-900 border border-slate-800 rounded px-3 py-2 text-white focus:outline-none focus:border-amber-500" placeholder="Describe the mechanical specifications..."></textarea>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label class="block text-slate-400 mb-1 font-medium">Metric 1 Name</label>
+                                <input type="text" id="macMet1" class="w-full bg-slate-900 border border-slate-800 rounded px-2 py-1.5 text-white focus:outline-none" placeholder="Clamping Force">
+                            </div>
+                            <div>
+                                <label class="block text-slate-400 mb-1 font-medium">Metric 1 Value</label>
+                                <input type="text" id="macVal1" class="w-full bg-slate-900 border border-slate-800 rounded px-2 py-1.5 text-white focus:outline-none" placeholder="4000 kN">
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2 rounded uppercase tracking-wider text-[11px] transition-all cursor-pointer mt-2">Publish Asset</button>
+                    </form>
+                </div>
+
+                <!-- Form Router Context for Works -->
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
+                    <h4 class="text-xs font-bold text-amber-400 uppercase tracking-widest mb-4"><i class="fa-solid fa-plus-circle mr-1"></i> Register Completed Work</h4>
+                    <form id="worksForm" onsubmit="handleWorkUpload(event)" class="space-y-3 text-xs">
+                        <div>
+                            <label class="block text-slate-400 mb-1 font-medium">Product / Job Title</label>
+                            <input type="text" id="workName" required class="w-full bg-slate-900 border border-slate-800 rounded px-3 py-2 text-white focus:outline-none focus:border-amber-500" placeholder="e.g., Precision Pharma Pill Box">
+                        </div>
+                        <div>
+                            <label class="block text-slate-400 mb-1 font-medium">Industry Classification</label>
+                            <select id="workCategory" class="w-full bg-slate-900 border border-slate-800 rounded px-3 py-2 text-white focus:outline-none focus:border-amber-500">
+                                <option value="Automotive Tooling">Automotive Tooling</option>
+                                <option value="Industrial Components">Industrial Components</option>
+                                <option value="Medical Moulding">Medical Moulding</option>
+                                <option value="Custom Die Design">Custom Die Design</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-slate-400 mb-1 font-medium">Production Insights</label>
+                            <textarea id="workDesc" required rows="2" class="w-full bg-slate-900 border border-slate-800 rounded px-3 py-2 text-white focus:outline-none focus:border-amber-500" placeholder="Material processed, design challenges met..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold py-2 rounded uppercase tracking-wider text-[11px] transition-all cursor-pointer mt-2">Commit To Gallery</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 bg-slate-950 border-t border-slate-800 text-center text-[11px] text-slate-500 flex justify-between items-center">
+            <span>Session Status: <span class="text-amber-500 font-mono">AUTHENTICATED</span></span>
+            <button onclick="logOutAdmin()" class="text-red-400 hover:underline cursor-pointer">Disconnect Console</button>
+        </div>
+    </div>
+
+    <!-- Core Interactive DOM Engine Logic -->
+    <script>
+        // State Machine Variables
+        let isConsoleAuthenticated = false;
+
+        // Gatekeeper Credential Database (Modify securely here)
+        const ADMIN_CREDENTIALS = {
+            userId: "admin",
+            tokenKey: "ypg2026"
+        };
+
+        function openAdminConsole() {
+            if (isConsoleAuthenticated) {
+                showAdminPanel();
+            } else {
+                const modal = document.getElementById('authModal');
+                modal.classList.remove('hidden');
+                setTimeout(() => modal.classList.remove('opacity-0'), 10);
+            }
+        }
+
+        function closeAuthModal() {
+            const modal = document.getElementById('authModal');
+            modal.classList.add('opacity-0');
+            document.getElementById('authError').classList.add('hidden');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        function verifyAdminAccess(event) {
+            event.preventDefault();
+            const inputUser = document.getElementById('authUser').value;
+            const inputPass = document.getElementById('authPass').value;
+            const errorLabel = document.getElementById('authError');
+
+            if (inputUser === ADMIN_CREDENTIALS.userId && inputPass === ADMIN_CREDENTIALS.tokenKey) {
+                isConsoleAuthenticated = true;
+                errorLabel.classList.add('hidden');
+                closeAuthModal();
+                setTimeout(() => showAdminPanel(), 350);
+                // Clear validation forms fields
+                document.getElementById('authUser').value = "";
+                document.getElementById('authPass').value = "";
+            } else {
+                errorLabel.classList.remove('hidden');
+            }
+        }
+
+        function showAdminPanel() {
+            const panel = document.getElementById('adminPanel');
+            panel.classList.remove('hidden');
+            setTimeout(() => panel.classList.remove('translate-x-full'), 10);
+        }
+
+        function closeAdminPanel() {
+            const panel = document.getElementById('adminPanel');
+            panel.classList.add('translate-x-full');
+            setTimeout(() => panel.classList.add('hidden'), 300);
+        }
+
+        function logOutAdmin() {
+            isConsoleAuthenticated = false;
+            closeAdminPanel();
+        }
+
+        function handleMachineUpload(e) {
+            e.preventDefault();
+            const name = document.getElementById('macName').value;
+            const desc = document.getElementById('macDesc').value;
+            const met1 = document.getElementById('macMet1').value || 'Clamping Force';
+            const val1 = document.getElementById('macVal1').value || 'Standard';
+
+            const grid = document.getElementById('machineryGrid');
+            const newCard = document.createElement('div');
+            newCard.className = "bg-slate-900/40 border border-amber-500/30 rounded-xl overflow-hidden hover:border-amber-400 transition-all group flex flex-col justify-between animate-fade-in";
+            newCard.innerHTML = `
+                <div>
+                    <div class="h-64 bg-slate-950 relative overflow-hidden flex items-center justify-center">
+                        <img src="WhatsApp Image 2026-06-24 at 1.15.25 PM.jpeg" alt="New Asset Setup" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 z-10"></div>
+                        <span class="absolute top-4 left-4 bg-amber-500 text-slate-950 text-[10px] uppercase font-bold tracking-widest px-2 py-1 rounded">Just Added</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">${name}</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">${desc}</p>
+                        <div class="space-y-2 border-t border-slate-800/60 pt-4">
+                            <div class="flex justify-between text-xs"><span class="text-slate-500">${met1}:</span><span class="text-amber-400 font-mono font-semibold">${val1}</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button class="w-full bg-amber-500 text-slate-950 font-semibold text-xs py-3 rounded-lg transition-all uppercase tracking-wider">Specs Sheet</button>
+                </div>
+            `;
+            grid.insertBefore(newCard, grid.firstChild);
+            document.getElementById('machineForm').reset();
+            closeAdminPanel();
+            document.getElementById('machinery').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handleWorkUpload(e) {
+            e.preventDefault();
+            const name = document.getElementById('workName').value;
+            const cat = document.getElementById('workCategory').value;
+            const desc = document.getElementById('workDesc').value;
+
+            const grid = document.getElementById('worksGrid');
+            const newWork = document.createElement('div');
+            newWork.className = "bg-slate-900/60 border border-amber-500/30 rounded-xl overflow-hidden hover:border-amber-400 transition-all p-4 group animate-fade-in";
+            newWork.innerHTML = `
+                <div class="h-44 rounded-lg bg-slate-950 flex items-center justify-center mb-4 relative overflow-hidden">
+                    <img src="WhatsApp Image 2026-06-24 at 1.15.25 PM.jpeg" alt="Mould Asset" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded">${cat}</span>
+                <h4 class="text-base font-bold text-white mt-2 mb-1">${name}</h4>
+                <p class="text-xs text-slate-400">${desc}</p>
+            `;
+            grid.insertBefore(newWork, grid.firstChild);
+            document.getElementById('worksForm').reset();
+            closeAdminPanel();
+            const footerElement = document.querySelector('footer');
+            if(footerElement) footerElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
